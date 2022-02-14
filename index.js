@@ -8,10 +8,6 @@ const uri =`mongodb+srv://${(process.env.S3_BUCKET)}:${(process.env.SECRET_KEY)}
 
 const port = 5000
 
-app.get('/', (req, res) => {
-  res.send('db working')
-})
-
 const app = express()
 app.use(cors())
 app.use(bodyParser.json())
